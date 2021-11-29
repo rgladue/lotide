@@ -1,21 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} === ${expected}`);
-  }
-};
 
-const eqArrays = function(arr1, arr2) {
-  if (arr1[0] !== arr2[0]) {
-    return false;
-  }
-  if (arr1[0] === arr2[0] && arr1[1] === arr2[1] && arr1[2] === arr2[2]) {
-    return true;
-  } else {
-    return false;
-  }
-};
 
 const middle = function(array) {
   for (i = 0; i < array.length; i++) {
@@ -42,7 +25,8 @@ const middle = function(array) {
       return array.slice(3, 5);
     }
 
-  }
+  } 
 };
 
-console.log(middle([1, 2, 3, 4, 5, 6]));
+module.exports = middle;
+
