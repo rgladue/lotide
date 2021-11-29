@@ -5,7 +5,7 @@ const map = (array, callback) => {
 // console.log("callback: ", cb)
 
   const results = [];
-  for(let item of array) {
+  for (let item of array) {
     // console.log("item before: ", item);
     // console.log("item after: ", cb(item));
     // console.log("---")
@@ -14,7 +14,7 @@ const map = (array, callback) => {
   return results;
 };
 const results1 = map(words, word => word[0]);
-console.log(results1)
+console.log(results1);
 
 
 map(words, results1);

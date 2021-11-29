@@ -7,20 +7,20 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function(arr1, arr2) {
- if (arr1[0] !== arr2[0]) {
- return false
- }
- if (arr1[0] === arr2[0] && arr1[1] === arr2[1] && arr1[2] === arr2[2]) {
-   return true;
- } else {
-   return false;
- }
+  if (arr1[0] !== arr2[0]) {
+    return false;
+  }
+  if (arr1[0] === arr2[0] && arr1[1] === arr2[1] && arr1[2] === arr2[2]) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const middle = function(array) {
   for (i = 0; i < array.length; i++) {
     if (array.length <= 2) {
-       return "Please add more than two elements to your array.";
+      return "Please add more than two elements to your array.";
        
     }
     if (array.length === 3) {
